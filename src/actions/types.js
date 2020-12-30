@@ -1,0 +1,3 @@
+export const SEARCH_CHARACTER = 'SEARCH_CHARACTER';
+export const FETCH_CHARACTERS = 'FETCH_CHARACTERS';
+export const LOADING = 'LOADING';

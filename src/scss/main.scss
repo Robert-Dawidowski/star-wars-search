@@ -1,0 +1,27 @@
+$light-grey: #e9ecef;
+
+.logo {
+  height: 90px;
+  width: 110px;
+}
+.card-body {
+  &:hover {
+    cursor: pointer;
+    background-color: $light-grey;
+  }
+}
+
+.page-link {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.modal-body {
+  max-height: 300px;
+  overflow-y: scroll;
+  &__container {
+    padding: 10px 0;
+    border-bottom: 1px solid $light-grey;
+  }
+}
