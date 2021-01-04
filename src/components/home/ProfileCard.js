@@ -55,7 +55,7 @@ const ProfileCard = ({ profile }) => {
                                     Film Title: {film.title}
                                 </a>
                                 <p>Release date: {film.release_date}</p>
-                                <p>Description: {film.opening_crawl.substring(0, 130)}</p>
+                                <p>Opening Crawl: {film.opening_crawl.substring(0, 130)}...</p>
                             </div>
                         )
                     })}

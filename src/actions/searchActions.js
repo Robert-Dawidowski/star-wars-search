@@ -15,9 +15,9 @@ export const fetchCharacters = text => async (dispatch) => {
     let characters = []
     let response = await fetch(`https://swapi.dev/api/people/?search=${text}`);
     let data = await response.json();
-    characters.push(data.results)
-
-
+    if(data.results.length){
+        characters.push(data.results)
+    }
     while (data.next !== null) {
         response = await fetch(data.next);
         data = await response.json();
